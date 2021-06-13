@@ -9,18 +9,19 @@ A live transfer of data to be viewed/edited via Bluetooth connection to an PC/Mo
 
 ## Different sensors
 
-### Using IMU sensor coupled with Pressure Sensors, GPS sensors, ToF sensors
+### Using IMU sensor coupled with Pressure Sensors, GPS sensors
 
 Feasibility: Easily available and dimensions suit the device size.   
-Transciever method is tracking the trajectory of the pen and sends the data wirelessly to a smartphone or a PC. This localisation problem can be approached by using trilateration using distance sensors and distance measurement with submillimeter accuracy from two different points with known coordinates from the transciever. This method has considerable disadvantages like high cost, error due to handling of the pen. ToF sensor recieving module also need muliplexers to receive data from different devices.
 
 ### CMOS sensor with LED as Source light
 
 Feasibility: Size constraints. Can't detect change if the pen is lifted by few millimeters. Adding an IMU sensor to detect that works.
 
-### IR/Ultrasonic sources of different frequencies and a device to receive the reflected data  
+### IR/Ultrasonic sources of different frequencies and a device to receive the reflected data, ToF sensors  
 
-Feasibility: Error prone. Ultrasonic sensors have better accuracy and would work in any surroundings. IR will face some interference from externalities.  
+Feasibility: Error prone. Ultrasonic sensors have better accuracy and would work in any surroundings. IR will face some interference from externalities.    
+
+Transciever method is tracking the trajectory of the pen and sends the data wirelessly to a smartphone or a PC. This localisation problem can be approached by using trilateration using distance sensors and distance measurement with submillimeter accuracy from two different points with known coordinates from the transciever. This method has considerable disadvantages like high cost, error due to handling of the pen. ToF sensor recieving module also need muliplexers to receive data from different devices.
 
 Inktuitive angle: Using Pen as transmitter and seperating receiver is a brilliat idea. It reduces error by some consideration.
 
@@ -37,7 +38,7 @@ We can design a PCB of preferable size based on our need and implement necessary
 
 This should be a bit difficult to implement. My thoughts are to collect data and implement machine learning algorithms in an external device.
 
-## Market Research  
+# Market Research  
 
 Dividing existing products based on technology used:
 
